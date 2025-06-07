@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #fef6f9;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+  }
+  
+  header {
+    background: #ffe3e1;
+    padding: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .navbar {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: #ff6f61;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ff6f61;
+  }
+  
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  #hero {
+    background: #ffdce0;
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #ff5045;
+  }
+  
+  .section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  
+  .section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff6f61;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ffdce0;
+    border-radius: 12px;
+    padding: 20px;
+    flex: 1 1 30%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+  }
+  
+  .card:nth-child(1) { animation-delay: 0.2s; }
+  .card:nth-child(2) { animation-delay: 0.4s; }
+  .card:nth-child(3) { animation-delay: 0.6s; }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    color: #ff6f61;
+    margin-bottom: 10px;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    list-style: none;
+  }
+  
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  footer {
+    background: #ffe3e1;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  .fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  .fade-in-delay-1 { animation-delay: 0.2s; }
+  .fade-in-delay-2 { animation-delay: 0.4s; }
+  .fade-in-delay-3 { animation-delay: 0.6s; }
+  .fade-in-delay-4 { animation-delay: 0.8s; }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: #ffe3e1;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .card-container {
+      flex-direction: column;
+    }
+  
+    .card {
+      flex: 1 1 100%;
+    }
+  
+    .hero-content h2 {
+      font-size: 28px;
+    }
+  
+    .hero-content p {
+      font-size: 16px;
+    }
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+    object-fit: contain;
+  }
+  
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #ff6f61;
+    font-size: 36px;
+    display: inline-block;
+    animation: 
+      typing 2.5s steps(30, end),
+      blink-caret 0.75s step-end 3,
+      hide-cursor 0.1s 4.5s forwards;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: #ff6f61; }
+    50% { border-color: transparent; }
+  }
+  
+  @keyframes hide-cursor {
+    to { border-color: transparent; }
+  }

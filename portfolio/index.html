@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drishti Mishra | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Drishti Mishra</h1>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content fade-in">
+      <h2 class="typewriter">Hi, I'm Drishti 👋</h2>
+      <p>Aspiring Full Stack Web Developer and AI Enthusiast</p>
+      <a href="#contact" class="btn">Let's Connect</a>
+    </div>
+  </section>
+
+
+
+  <section id="about" class="section fade-in fade-in-delay-1">
+    <h2>About Me</h2>
+    <p>I'm a 2nd-year B.Tech Computer Science (AIML) student at Manipal University Jaipur with a passion for Web Development and AI. I love building projects, learning new technologies, and solving real-world problems through code.</p>
+  </section>
+
+  <section id="projects" class="section fade-in fade-in-delay-2">
+    <h2>Projects</h2>
+    <div class="card-container">
+      <div class="card" onclick="openPopup('Chit Chat', 'A real-time messaging app using MERN & Socket.IO')">
+        <h3>Chit Chat</h3>
+        <p>Real-time messaging app using MERN & Socket.IO.</p>
+        <a href="https://github.com/Drishti1405/Chit-Chat-" target="_blank">View Project</a>
+      </div>
+      <div class="card" onclick="openPopup('Vibe and Dine', 'Food recommendation web app (Ongoing)')">
+        <h3>Vibe and Dine</h3>
+        <p>Food recommendation web app (Ongoing).</p>
+        <a href="https://github.com/Drishti1405/vibe-and-dine" target="_blank">View Project</a>
+      </div>
+      <div class="card" onclick="openPopup('Weather App', 'Weather app using OpenWeather API & geolocation')">
+        <h3>Weather App</h3>
+        <p>Weather app using OpenWeather API & geolocation.</p>
+        <a href="https://github.com/Drishti1405/Weather-Application-" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section fade-in fade-in-delay-3">
+    <h2>Skills</h2>
+    <ul class="skills-grid">
+      <li><strong>Languages:</strong> Python, C++, C, JavaScript, SQL</li>
+      <li><strong>Frontend:</strong> HTML, CSS, React.js</li>
+      <li><strong>Backend:</strong> Node.js, Express.js, MongoDB, Flask</li>
+      <li><strong>Tools:</strong> VS Code, MySQL, PyCharm</li>
+      <li><strong>Soft Skills:</strong> Communication, Leadership, Problem-Solving</li>
+    </ul>
+  </section>
+
+  <section id="education" class="section fade-in fade-in-delay-4">
+    <h2>Education</h2>
+    <p><strong>Manipal University Jaipur</strong><br>B.Tech in Computer Science (AIML) | CGPA: 7.61 / 10</p>
+  </section>
+
+  <section id="certifications" class="section fade-in fade-in-delay-4">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Data Structures & Algorithms Lab by CodeChef</li>
+      <li>Agile with Atlassian Jira by Coursera</li>
+      <li>Database Design by Oracle Academy</li>
+      <li>AI For Everyone by DeepLearning.AI (via Coursera)</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section fade-in fade-in-delay-4">
+    <h2>Contact</h2>
+    <p><img src="email.png" alt="Email" class="icon"> <a href="mailto:mishradrishti14@gmail.com">mishradrishti14@gmail.com</a></p>
+    <p><img src="call.png" alt="Phone" class="icon"> 6260976033</p>
+    <p><img src="linkedin.png" alt="LinkedIn" class="icon"> <a href="https://www.linkedin.com/in/drishti-mishra-457546289" target="_blank">Drishti Mishra</a></p>
+    <p><img src="github.png" alt="GitHub" class="icon"> <a href="https://github.com/Drishti1405" target="_blank">Drishti1405</a></p>
+  </section>
+  
+<footer>
+    <p>© 2025 Drishti Mishra.</p>
+    <a class="btn" href="resume.pdf" download style="margin-top:10px; display:inline-block;">📄 Download My Resume</a>
+  </footer>
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
